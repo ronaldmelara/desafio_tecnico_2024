@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "YEBAltpGIGfnTwkBX9mCRMOO1oqIHymt4JEUBqAlwpI=",
+  "Source": "ConsaludApiRest",
+  "BasePath": "_content/ConsaludApiRest",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
