@@ -14,22 +14,33 @@
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.5.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.5.0" />
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.5.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.27" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Model\" />
     <None Remove="Data\" />
     <None Remove="Helpers\" />
     <None Remove="Services\" />
-    <None Remove="Mappers\" />
     <None Remove="Jwt\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model\" />
     <Folder Include="Data\" />
     <Folder Include="Helpers\" />
     <Folder Include="Services\" />
-    <Folder Include="Mappers\" />
     <Folder Include="Jwt\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Consalud.Model\Consalud.Model.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Consalud.Commons\Consalud.Commons.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+    <ProjectReference Include="..\Consalud.DataAccess\Consalud.DataAccess.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Helpers\DataContext.cs" />
   </ItemGroup>
 </Project>

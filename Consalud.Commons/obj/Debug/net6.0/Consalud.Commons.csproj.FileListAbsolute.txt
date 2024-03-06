@@ -1,0 +1,15 @@
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/bin/Debug/net6.0/Consalud.Commons.deps.json
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/bin/Debug/net6.0/Consalud.Commons.dll
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/bin/Debug/net6.0/Consalud.Commons.pdb
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/bin/Debug/net6.0/Consalud.Model.dll
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/bin/Debug/net6.0/Consalud.Model.pdb
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/obj/Debug/net6.0/Consalud.Commons.csproj.AssemblyReference.cache
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/obj/Debug/net6.0/Consalud.Commons.GeneratedMSBuildEditorConfig.editorconfig
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/obj/Debug/net6.0/Consalud.Commons.AssemblyInfoInputs.cache
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/obj/Debug/net6.0/Consalud.Commons.AssemblyInfo.cs
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/obj/Debug/net6.0/Consalud.Commons.csproj.CoreCompileInputs.cache
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/obj/Debug/net6.0/Consalud.Commons.csproj.CopyComplete
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/obj/Debug/net6.0/Consalud.Commons.dll
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/obj/Debug/net6.0/refint/Consalud.Commons.dll
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/obj/Debug/net6.0/Consalud.Commons.pdb
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/obj/Debug/net6.0/ref/Consalud.Commons.dll

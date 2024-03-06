@@ -1,5 +1,8 @@
 ﻿using System.Text;
+using Consalud.Commons.contracts;
+using ConsaludApiRest.Helpers;
 using ConsaludApiRest.Jwt;
+using ConsaludApiRest.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
@@ -36,6 +39,8 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
     });
 
 builder.Services.AddScoped<IJwtService, JwtService>();
+builder.Services.AddScoped<IUserServices, UserServices>();
+
 
 var app = builder.Build();
 

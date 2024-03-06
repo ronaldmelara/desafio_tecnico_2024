@@ -1,22 +1,28 @@
 ﻿using System;
+using CConsalud.Model.Responses;
+using Consalud.Commons.contracts;
+using Consalud.Model.Requests;
 using ConsaludApiRest.Data;
 using ConsaludApiRest.Helpers;
 using ConsaludApiRest.Jwt;
-using ConsaludApiRest.Mappers;
 
 namespace ConsaludApiRest.Services
 {
-	public class UserServices
-	{
+	public class UserServices : IUserServices
+    {
 		private IJwtService jwt;
-		public UserServices(IJwtService jwtService)
+     
+        UserDA uDa;
+        public UserServices(IJwtService jwtService, IConfiguration conf)
 		{
 			this.jwt = jwtService;
+     
+            uDa = new UserDA(conf);
 		}
 
 		public AuthResponse CreateUser(AuthRequest request)
 		{
-			UserDA uDa = new UserDA();
+	
 			var result = uDa.CreateUser(request.Username, request.Password);
 
 			if (result)
@@ -30,7 +36,7 @@ namespace ConsaludApiRest.Services
 
         public AuthResponse LoginUser(AuthRequest request)
         {
-            UserDA uDa = new UserDA();
+
 			var result = uDa.GetUserByUsername(request.Username);
 			AuthResponse response = null;
 

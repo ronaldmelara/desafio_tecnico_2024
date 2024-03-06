@@ -1,6 +1,8 @@
 ﻿using System;
+using CConsalud.Model.Responses;
+using Consalud.Commons.contracts;
+using Consalud.Model.Requests;
 using ConsaludApiRest.Jwt;
-using ConsaludApiRest.Mappers;
 using ConsaludApiRest.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -13,10 +15,12 @@ namespace ConsaludApiRest.Controllers
     public class LoginController : ControllerBase
     {
         private IJwtService jwtService;
+        private IUserServices pUserServices;
 
-        public LoginController(IJwtService pJwtService)
+        public LoginController(IJwtService pJwtService, IUserServices userServices)
 		{
             jwtService = pJwtService;
+            pUserServices = userServices;
         }
 
         [AllowAnonymous]
@@ -24,8 +28,7 @@ namespace ConsaludApiRest.Controllers
         [SwaggerOperation(OperationId = "user", Summary ="Create new user", Description = "This method allows you to register a new user")]
         public AuthResponse Users(AuthRequest request)
         {
-            UserServices uS = new UserServices(jwtService);
-            return uS.CreateUser(request);
+            return pUserServices.CreateUser(request);
         }
 
         [AllowAnonymous]
@@ -33,8 +36,7 @@ namespace ConsaludApiRest.Controllers
         [SwaggerOperation(OperationId = "auth", Summary ="User login", Description = "This method allows you to log in, validating username and password.")]
         public IActionResult Auth(AuthRequest request)
         {
-            UserServices uS = new UserServices(jwtService);
-            var result = uS.LoginUser(request);
+            var result = pUserServices.LoginUser(request);
             if (result == null)
             {
                 return NotFound();

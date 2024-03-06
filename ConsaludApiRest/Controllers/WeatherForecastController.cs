@@ -1,7 +1,4 @@
 ﻿using ConsaludApiRest.Jwt;
-using ConsaludApiRest.Mappers;
-using ConsaludApiRest.Services;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ConsaludApiRest.Controllers;

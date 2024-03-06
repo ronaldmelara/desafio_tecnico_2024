@@ -1,22 +1,27 @@
 ﻿using System;
 using System.Text.Json;
+using Consalud.DataAccess;
+using Consalud.Model.Entities;
 using ConsaludApiRest.Helpers;
-using ConsaludApiRest.Model;
 
 namespace ConsaludApiRest.Data
 {
 	public class UserDA
 	{
 		private const string UsersFilePath = "users.json";
-		public UserDA()
+		private DatabaseEngine db;
+        public UserDA(IConfiguration conf)
 		{
-		}
+			db = new DatabaseEngine(conf);
+            
+        }
 
-		public List<User> GetUsers()
+		public List<Users> GetUsers()
 		{
-			
-			string userJson = File.ReadAllText(UsersFilePath);
-			return JsonSerializer.Deserialize<List<User>>(userJson);
+
+			return db.Data.Users.ToList();
+			//string userJson = File.ReadAllText(UsersFilePath);
+			//return JsonSerializer.Deserialize<List<Users>>(userJson);
 		}
 
 		public bool CreateUser(string username, string password)
@@ -25,14 +30,14 @@ namespace ConsaludApiRest.Data
 			{
 				string hashedPassword = CustomHelper.EncryptPassword(password);
 
-				List<User> users;
+				List<Users> users;
 				if (CustomHelper.CheckFile(UsersFilePath))
 				{
 					users = GetUsers();
 				}
 				else
 				{
-					users = new List<User>();
+					users = new List<Users>();
 				}
 
 				if(users.Exists(u=> u.Username == username))
@@ -40,7 +45,9 @@ namespace ConsaludApiRest.Data
 					return false;
 				}
 
-				users.Add(new User { Username = username, Password = hashedPassword });
+				users.Add(new Users { Username = username, Password = hashedPassword });
+				db.Data.Users.Add(new Users { Username = username, Password = hashedPassword });
+				db.Data.SaveChanges();
 
 				string userJsonUpdated = JsonSerializer.Serialize(users);
 				CustomHelper.saveFile(userJsonUpdated, UsersFilePath);
@@ -52,10 +59,10 @@ namespace ConsaludApiRest.Data
 			}
 		}
 
-        public User GetUserByUsername(string username)
+        public Users GetUserByUsername(string username)
         {
 
-            List<User> users = GetUsers();
+            List<Users> users = GetUsers();
 
             return users.FirstOrDefault(u=> u.Username == username);
 

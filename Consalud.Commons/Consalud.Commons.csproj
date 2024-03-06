@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="contracts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="contracts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Consalud.Model\Consalud.Model.csproj" />
+  </ItemGroup>
+</Project>
