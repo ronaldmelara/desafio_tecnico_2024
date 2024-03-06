@@ -21,7 +21,9 @@ namespace Consalud.DataAccess
         }
 
         public DbSet<Users> Users { get; set; }
-        public DbSet<Factura> Facturas { get; set; }
+        public DbSet<Facturas> Facturas { get; set; }
+        public DbSet<DetalleFactura> DetalleFactura { get; set; }
+        public DbSet<Producto> Producto { get; set; }
     }
 }
 

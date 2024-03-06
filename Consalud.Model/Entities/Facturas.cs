@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace Consalud.Model.Entities
 {
-	public class Factura
+	public class Facturas
 	{
-		public Factura()
-		{
-		}
-
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public double NumeroDocumento { get; set; }
         public double RUTVendedor { get; set; }
@@ -18,7 +17,7 @@ namespace Consalud.Model.Entities
         public double ComunaComprador { get; set; }
         public double RegionComprador { get; set; }
         public double TotalFactura { get; set; }
-        public List<DetalleFactura> DetalleFactura { get; set; }
+        public virtual List<DetalleFactura> DetalleFactura { get; set; }
     }
 }
 

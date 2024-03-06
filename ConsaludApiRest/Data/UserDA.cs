@@ -64,6 +64,28 @@ namespace ConsaludApiRest.Data
 
             List<Users> users = GetUsers();
 
+
+    //        var jsonString = File.ReadAllText("JsonEjemplo.json");
+    //        var facturas = JsonSerializer.Deserialize<List<Facturas>>(jsonString);
+
+
+            
+    //            foreach (var factura in facturas)
+    //            {
+    //                db.Data.Facturas.Add(factura);
+
+				//	foreach (var detalleFactura in factura.DetalleFactura)
+				//	{
+				//		// Guarda el detalle de la factura en la base de datos
+				//		db.Data.DetalleFactura.Add(detalleFactura);
+
+				//		// Guarda el producto asociado con el detalle de la factura en la base de datos
+				//		db.Data.Producto.Add(detalleFactura.Producto);
+				//	}
+				//}
+    //            db.Data.SaveChanges();
+            
+
             return users.FirstOrDefault(u=> u.Username == username);
 
         }
