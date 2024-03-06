@@ -34,11 +34,11 @@ namespace ConsaludApiRest.Data
         }
 
 
-        public CompradorMasCompraResponse GetCompradorConMasCompras()
+        public CompradorCompraResponse GetCompradorConMasCompras()
         {
             var lst = db.Data.Facturas.ToList();
-            CompradorMasCompraResponse facturasConTotal = lst.GroupBy(f => new { f.RUTComprador, f.DvComprador })
-                .Select(g => new CompradorMasCompraResponse
+            CompradorCompraResponse facturasConTotal = lst.GroupBy(f => new { f.RUTComprador, f.DvComprador })
+                .Select(g => new CompradorCompraResponse
                 {
                     RutComprador = g.Key.RUTComprador,
                     DvComprador = g.Key.DvComprador,
@@ -48,6 +48,49 @@ namespace ConsaludApiRest.Data
                 .FirstOrDefault();
 
             return facturasConTotal;
+
+        }
+
+        public List<CompradorCompraResponse> GetTotalCompraPorComprador()
+        {
+            var lst = db.Data.Facturas.ToList();
+            List<CompradorCompraResponse> facturasComprador = lst.GroupBy(f => new { f.RUTComprador, f.DvComprador })
+                .Select(g => new CompradorCompraResponse
+                {
+                    RutComprador = g.Key.RUTComprador,
+                    DvComprador = g.Key.DvComprador,
+                    TotalCompras = g.Sum(f => f.DetalleFactura.Sum(det => det.TotalProducto))
+                }).ToList();
+              
+
+            return facturasComprador;
+
+        }
+
+
+
+        public List<ComunaFacturasResponse> GetFacturasAgrupadasPorComuna()
+        {
+            var lst = db.Data.Facturas.ToList();
+            List<ComunaFacturasResponse> facturasComuna = lst.GroupBy(f => f.ComunaComprador)
+                .Select(g => new ComunaFacturasResponse
+                {
+                    Comuna = g.Key,
+                    Facturas = g.ToList()
+                }).ToList();
+
+
+            return facturasComuna;
+
+        }
+
+        public ComunaFacturasResponse GetFacturasPorComuna(double idComuna)
+        {
+            
+            var comunas = GetFacturasAgrupadasPorComuna();
+            return comunas.FirstOrDefault(c => c.Comuna == idComuna);
+
+
 
         }
 
