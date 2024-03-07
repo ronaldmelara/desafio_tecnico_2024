@@ -1,0 +1,386 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/ConsaludApiRest.Test/ConsaludApiRest.Test.csproj": {}
+  },
+  "projects": {
+    "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/Consalud.Commons.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/Consalud.Commons.csproj",
+        "projectName": "Consalud.Commons",
+        "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/Consalud.Commons.csproj",
+        "packagesPath": "/Users/melaragalaz/.nuget/packages/",
+        "outputPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/melaragalaz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/Consalud.Model.csproj": {
+                "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/Consalud.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.313/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.DataAccess/Consalud.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.DataAccess/Consalud.DataAccess.csproj",
+        "projectName": "Consalud.DataAccess",
+        "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.DataAccess/Consalud.DataAccess.csproj",
+        "packagesPath": "/Users/melaragalaz/.nuget/packages/",
+        "outputPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.DataAccess/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/melaragalaz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/Consalud.Commons.csproj": {
+                "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/Consalud.Commons.csproj"
+              },
+              "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/Consalud.Model.csproj": {
+                "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/Consalud.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.27, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.27, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.313/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/Consalud.Model.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/Consalud.Model.csproj",
+        "projectName": "Consalud.Model",
+        "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/Consalud.Model.csproj",
+        "packagesPath": "/Users/melaragalaz/.nuget/packages/",
+        "outputPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/melaragalaz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.313/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/ConsaludApiRest.Test/ConsaludApiRest.Test.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/ConsaludApiRest.Test/ConsaludApiRest.Test.csproj",
+        "projectName": "ConsaludApiRest.Test",
+        "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/ConsaludApiRest.Test/ConsaludApiRest.Test.csproj",
+        "packagesPath": "/Users/melaragalaz/.nuget/packages/",
+        "outputPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/ConsaludApiRest.Test/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/melaragalaz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/Consalud.Commons.csproj": {
+                "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/Consalud.Commons.csproj"
+              },
+              "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/Consalud.Model.csproj": {
+                "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/Consalud.Model.csproj"
+              },
+              "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/ConsaludApiRest/ConsaludApiRest.csproj": {
+                "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/ConsaludApiRest/ConsaludApiRest.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "Moq": {
+              "target": "Package",
+              "version": "[4.20.70, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[3.13.2, )"
+            },
+            "NUnit.Console": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            },
+            "NUnit.ConsoleRunner": {
+              "target": "Package",
+              "version": "[3.17.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "coverlet.collector": {
+              "target": "Package",
+              "version": "[3.1.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.313/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/ConsaludApiRest/ConsaludApiRest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/ConsaludApiRest/ConsaludApiRest.csproj",
+        "projectName": "ConsaludApiRest",
+        "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/ConsaludApiRest/ConsaludApiRest.csproj",
+        "packagesPath": "/Users/melaragalaz/.nuget/packages/",
+        "outputPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/ConsaludApiRest/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/melaragalaz/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/sdk/7.0.313/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/Consalud.Commons.csproj": {
+                "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/Consalud.Commons.csproj"
+              },
+              "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.DataAccess/Consalud.DataAccess.csproj": {
+                "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.DataAccess/Consalud.DataAccess.csproj"
+              },
+              "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/Consalud.Model.csproj": {
+                "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/Consalud.Model.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.27, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.27, )"
+            },
+            "Microsoft.OpenApi": {
+              "target": "Package",
+              "version": "[1.6.13, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.313/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
