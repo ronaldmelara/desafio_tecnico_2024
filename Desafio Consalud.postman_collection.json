@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "08e53197-cb7c-4f12-ab1d-d6216d1e98e7",
+		"name": "Desafio Consalud",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23761612"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"rm39744\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7248/auth/Login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7248",
+					"path": [
+						"auth",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Nuevo usaurio",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"rm39744\",\n    \"password\": \"123456\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7248/auth/New",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7248",
+					"path": [
+						"auth",
+						"New"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "facturas",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InJtMzk3NDQiLCJleHAiOjE3MDk4MDMzOTksImlzcyI6Ik1lbGFyYUdhbGF6IiwiYXVkIjoiUHVibGljIn0.lboOciLzzDkwX2CloUH5YLC9SYlHcmETfoRsnY4KKvM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7248/api/v1/Facturas",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7248",
+					"path": [
+						"api",
+						"v1",
+						"Facturas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "facturas por Rut",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InJtMzk3NDQiLCJleHAiOjE3MDk4MDMzOTksImlzcyI6Ik1lbGFyYUdhbGF6IiwiYXVkIjoiUHVibGljIn0.lboOciLzzDkwX2CloUH5YLC9SYlHcmETfoRsnY4KKvM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7248/api/v1/Facturas/11488103",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7248",
+					"path": [
+						"api",
+						"v1",
+						"Facturas",
+						"11488103"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Comprador con mas compras",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InJtMzk3NDQiLCJleHAiOjE3MDk4MDMzOTksImlzcyI6Ik1lbGFyYUdhbGF6IiwiYXVkIjoiUHVibGljIn0.lboOciLzzDkwX2CloUH5YLC9SYlHcmETfoRsnY4KKvM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7248/api/v1/facturas/clientes/frecuente",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7248",
+					"path": [
+						"api",
+						"v1",
+						"facturas",
+						"clientes",
+						"frecuente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Clientes y compras",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InJtMzk3NDQiLCJleHAiOjE3MDk4MDMzOTksImlzcyI6Ik1lbGFyYUdhbGF6IiwiYXVkIjoiUHVibGljIn0.lboOciLzzDkwX2CloUH5YLC9SYlHcmETfoRsnY4KKvM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7248/api/v1/facturas/clientes",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7248",
+					"path": [
+						"api",
+						"v1",
+						"facturas",
+						"clientes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Facturas por Id Comuna",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InJtMzk3NDQiLCJleHAiOjE3MDk4MDMzOTksImlzcyI6Ik1lbGFyYUdhbGF6IiwiYXVkIjoiUHVibGljIn0.lboOciLzzDkwX2CloUH5YLC9SYlHcmETfoRsnY4KKvM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7248/api/v1/facturas/comuna/65",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7248",
+					"path": [
+						"api",
+						"v1",
+						"facturas",
+						"comuna",
+						"65"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Facturas agrupadas por comuna",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6InJtMzk3NDQiLCJleHAiOjE3MDk4MDMzOTksImlzcyI6Ik1lbGFyYUdhbGF6IiwiYXVkIjoiUHVibGljIn0.lboOciLzzDkwX2CloUH5YLC9SYlHcmETfoRsnY4KKvM",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7248/api/v1/facturas/comuna/",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7248",
+					"path": [
+						"api",
+						"v1",
+						"facturas",
+						"comuna",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
