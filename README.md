@@ -69,8 +69,11 @@ De manera, que para conseguir lo anterior mi API expone los siguientes métodos:
 En cuanto a ***codificación***: se construye una aplicación con arquitectura típica en **N Capas**.   Donde es posible distinguir los controladores, los servicios y librerías donde se agrupan el Modelo (Entidades, dto, Request, response),  DataAccess donde se exponen las interfaces de contrato que exponen los repositorios y sus métodos para acceder a datos mediante **EntityFramework**.
 
 
-Api publicada en: https://consaludapirest20240307102827.azurewebsites.net/swagger/index.html
+Api publicada en: **https://consaludapirest20240307102827.azurewebsites.net/swagger/index.html**
+
 Github: https://github.com/ronaldmelara/desafio_tecnico_2024
+
+NOTA: el usuario creado en la BD para autenticar y obtener el token es:  **rm39744** con password **123456**
 
 Screenshot Adicionales:
 
