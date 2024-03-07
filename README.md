@@ -45,6 +45,24 @@ Fue necesario utilizar los siguientes elementos:
  - DBeaver 23.3.5
 
 Una vez instalado los componentes, se crea un proyecto de tipo API (ASPNET Core) para dotnet 6.0. 
-Para poder realizar este ejercicio utiliza el archivo json y se vuelca a una base de datos SQLite, en la cual construí las tablas que relacionan Facturas, Detalle de Facturas y Producto con el siguiente esquema.
+Para poder realizar este ejercicio utiliza el archivo json y se vuelca a una base de datos **SQLite**, en la cual construí las tablas que relacionan Facturas, Detalle de Facturas y Producto con el siguiente esquema.
 
-![Relacion tablas facturas](https://github.com/ronaldmelara/desafio_tecnico_2024/blob/main/esquema_db_1.png)
+![enter image description here](https://github.com/ronaldmelara/desafio_tecnico_2024/blob/main/esquema_db_1.png)
+
+Adicional, existe la tabla "User" (esta se utiliza para la autenticación)![enter image description here](https://github.com/ronaldmelara/desafio_tecnico_2024/blob/main/esquema_bd_2.png)
+
+Para fines de Autenticación, implementé **JWT**, donde, la dinámica será que cuando un "*cliente*" (llamaré asi a la aplicación que consume mi API) requiera consumir alguno de los métodos de consulta, este deberá proveer un **"Token Bearer"** para poder identificarse y que la API pueda devolver los datos.
+De manera, que para conseguir lo anterior mi API expone los siguientes métodos:
+| Path |Tipo  | Requiere Token | Descripción breve
+|--|--|--|--|
+| auth/New | POST  | N/A | Crear un nuevo usuario. Se retornará un token activo para 45min|
+| auth/Login | POST  | N/A | Valida un usuario. Se retornará un token activo para 45min|
+| api/v1/facturas | GET  | Si | Lista de Facturas|
+| api/v1/facturas/{rut} | GET  | Si | Lista de Facturas por RUT|
+| api/v1/facturas/clientes/frecuente | GET  | Si | Comprador con más compras|
+| api/v1/facturas/clientes | GET  | Si | Lista clientes y compras realizadas|
+| api/v1/facturas/comuna/{idComuna} | GET  | Si | Facturas relacionadas a una comuna específica|
+| api/v1/facturas/comuna | GET  | Si | Lista de Facturas agrupadas por comuna|
+
+
+En cuanto a ***codificación***: se construye una aplicación con arquitectura típica en **N Capas**.   Donde es posible distinguir los controladores, los servicios y librerías donde se agrupan el Modelo (Entidades, dto, Request, response),  DataAccess donde se exponen las interfaces de contrato que exponen los repositorios y sus métodos para acceder a datos mediante **EntityFramework**.
