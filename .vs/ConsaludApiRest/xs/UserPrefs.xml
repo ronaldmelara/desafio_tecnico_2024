@@ -9,11 +9,10 @@
       <File FileName="Consalud.Model/Entities/DetalleFactura.cs" Line="1" Column="1" />
       <File FileName="ConsaludApiRest/Jwt/JwtService.cs" />
       <File FileName="ConsaludApiRest/Controllers/FacturasController.cs" Line="39" Column="1" />
-      <File FileName="ConsaludApiRest/app.yaml" />
       <File FileName="ConsaludApiRest/appsettings.json" />
       <File FileName="ConsaludApiRest/Properties/launchSettings.json" Line="1" Column="1" />
       <File FileName="ConsaludApiRest/Services/FacturasServices.cs" Line="21" Column="1" />
-      <File FileName="Consalud.DataAccess/Repositories/FacturasDA.cs" Line="22" Column="1" />
+      <File FileName="Consalud.DataAccess/Repositories/FacturasDA.cs" Line="28" Column="12" />
       <File FileName="Consalud.DataAccess/Repositories/UserDA.cs" Line="52" Column="1" />
     </Files>
     <Pads>
