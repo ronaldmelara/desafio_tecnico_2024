@@ -1,47 +1,35 @@
 ﻿<Properties StartupConfiguration="{C3184633-95E7-41B5-BBCF-827373DD417A}|Default">
-  <MonoDevelop.Ide.ItemProperties.ConsaludApiRest PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="ConsaludApiRest/Program.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ConsaludApiRest/Properties/launchSettings.json">
     <Files>
-      <File FileName="Consalud.Model/Entities/User.cs" Line="18" Column="1" IsPinned="True" />
       <File FileName="ConsaludApiRest/JsonEjemplo.json" />
-      <File FileName="ConsaludApiRest/Data/UserDA.cs" />
       <File FileName="ConsaludApiRest/Controllers/LoginController.cs" />
       <File FileName="ConsaludApiRest/Services/UserServices.cs" />
-      <File FileName="Consalud.Model/Entities/Factura.cs" />
-      <File FileName="ConsaludApiRest/Program.cs" Line="70" Column="1" />
-      <File FileName="Consalud.Commons/Class1.cs" />
       <File FileName="Consalud.Commons/contracts/IUserServices.cs" />
       <File FileName="Consalud.Model/Entities/DetalleFactura.cs" />
       <File FileName="ConsaludApiRest/Jwt/JwtService.cs" />
-      <File FileName="ConsaludApiRest/appsettings.json" Line="1" Column="1" />
-      <File FileName="ConsaludApiRest/users.json" Line="1" Column="1" />
-      <File FileName="ConsaludApiRest/Properties/launchSettings.json" Line="16" Column="70" />
+      <File FileName="ConsaludApiRest/Controllers/FacturasController.cs" />
+      <File FileName="ConsaludApiRest.Test/UnitTest1.cs" />
+      <File FileName="ConsaludApiRest/app.yaml" />
+      <File FileName="ConsaludApiRest/appsettings.json" />
+      <File FileName="ConsaludApiRest/Properties/launchSettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="ConsaludApiRest" expanded="True">
-            <Node name="Consalud.Model" expanded="True">
-              <Node name="Entities" expanded="True" />
-            </Node>
-            <Node name="ConsaludApiRest" expanded="True">
-              <Node name="Properties" expanded="True" />
-              <Node name="Program.cs" selected="True" />
-            </Node>
+            <Node name="ConsaludApiRest" expanded="True" selected="True" />
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.ConsaludApiRest.Test FirstBuild="True" />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <Breakpoint file="/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/ConsaludApiRest/Data/UserDA.cs" relfile="ConsaludApiRest/Data/UserDA.cs" line="30" column="1" />
-    <Breakpoint file="/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.DataAccess/DataContext.cs" relfile="Consalud.DataAccess/DataContext.cs" line="20" column="1" />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.ConsaludApiRest PreferredExecutionTarget="/System/Volumes/Preboot/Cryptexes/App/System/Applications/Safari.app" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/ConsaludApiRest/Data/UserDA.cs" relfile="ConsaludApiRest/Data/UserDA.cs" line="30" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
 </Properties>

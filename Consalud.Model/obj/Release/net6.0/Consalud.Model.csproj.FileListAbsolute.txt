@@ -1,0 +1,12 @@
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/bin/Release/net6.0/Consalud.Model.deps.json
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/bin/Release/net6.0/Consalud.Model.dll
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/bin/Release/net6.0/Consalud.Model.pdb
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/obj/Release/net6.0/Consalud.Model.GeneratedMSBuildEditorConfig.editorconfig
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/obj/Release/net6.0/Consalud.Model.AssemblyInfoInputs.cache
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/obj/Release/net6.0/Consalud.Model.AssemblyInfo.cs
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/obj/Release/net6.0/Consalud.Model.csproj.CoreCompileInputs.cache
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/obj/Release/net6.0/Consalud.Model.sourcelink.json
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/obj/Release/net6.0/Consalud.Model.dll
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/obj/Release/net6.0/refint/Consalud.Model.dll
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/obj/Release/net6.0/Consalud.Model.pdb
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/obj/Release/net6.0/ref/Consalud.Model.dll

@@ -1,0 +1,3 @@
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/bin/Release/net6.0/publish/Consalud.Model.dll
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/bin/Release/net6.0/publish/Consalud.Model.deps.json
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/bin/Release/net6.0/publish/Consalud.Model.pdb

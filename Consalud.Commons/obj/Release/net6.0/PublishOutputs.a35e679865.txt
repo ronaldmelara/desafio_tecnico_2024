@@ -1,0 +1,5 @@
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/bin/Release/net6.0/publish/Consalud.Commons.dll
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/bin/Release/net6.0/publish/Consalud.Commons.deps.json
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/bin/Release/net6.0/publish/Consalud.Commons.pdb
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/bin/Release/net6.0/publish/Consalud.Model.dll
+/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/bin/Release/net6.0/publish/Consalud.Model.pdb
