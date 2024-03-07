@@ -49,7 +49,8 @@ Para poder realizar este ejercicio utiliza el archivo json y se vuelca a una bas
 
 ![enter image description here](https://github.com/ronaldmelara/desafio_tecnico_2024/blob/main/esquema_db_1.png)
 
-Adicional, existe la tabla "User" (esta se utiliza para la autenticación)![enter image description here](https://github.com/ronaldmelara/desafio_tecnico_2024/blob/main/esquema_bd_2.png)
+Adicional, existe la tabla "User" (esta se utiliza para la autenticación)
+![enter image description here](https://github.com/ronaldmelara/desafio_tecnico_2024/blob/main/esquema_bd_2.png)
 
 Para fines de Autenticación, implementé **JWT**, donde, la dinámica será que cuando un "*cliente*" (llamaré asi a la aplicación que consume mi API) requiera consumir alguno de los métodos de consulta, este deberá proveer un **"Token Bearer"** para poder identificarse y que la API pueda devolver los datos.
 De manera, que para conseguir lo anterior mi API expone los siguientes métodos:
@@ -66,3 +67,9 @@ De manera, que para conseguir lo anterior mi API expone los siguientes métodos:
 
 
 En cuanto a ***codificación***: se construye una aplicación con arquitectura típica en **N Capas**.   Donde es posible distinguir los controladores, los servicios y librerías donde se agrupan el Modelo (Entidades, dto, Request, response),  DataAccess donde se exponen las interfaces de contrato que exponen los repositorios y sus métodos para acceder a datos mediante **EntityFramework**.
+
+Screenshot Adicionales:
+
+![enter image description here](https://github.com/ronaldmelara/desafio_tecnico_2024/blob/main/Swagger.png)
+
+![enter image description here](https://github.com/ronaldmelara/desafio_tecnico_2024/blob/main/proyecto_vs2022.png)
