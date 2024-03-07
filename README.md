@@ -46,3 +46,5 @@ Fue necesario utilizar los siguientes elementos:
 
 Una vez instalado los componentes, se crea un proyecto de tipo API (ASPNET Core) para dotnet 6.0. 
 Para poder realizar este ejercicio utiliza el archivo json y se vuelca a una base de datos SQLite, en la cual construí las tablas que relacionan Facturas, Detalle de Facturas y Producto con el siguiente esquema.
+
+![Relacion tablas facturas](https://github.com/ronaldmelara/desafio_tecnico_2024/blob/main/esquema_db_1.png)
