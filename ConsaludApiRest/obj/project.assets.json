@@ -2502,39 +2502,40 @@
     ]
   },
   "packageFolders": {
-    "/Users/melaragalaz/.nuget/packages/": {}
+    "C:\\Users\\zf701439\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/ConsaludApiRest/ConsaludApiRest.csproj",
+      "projectUniqueName": "C:\\Users\\zf701439\\source\\repos\\ronaldmelara\\desafio_tecnico_2024\\ConsaludApiRest\\ConsaludApiRest.csproj",
       "projectName": "ConsaludApiRest",
-      "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/ConsaludApiRest/ConsaludApiRest.csproj",
-      "packagesPath": "/Users/melaragalaz/.nuget/packages/",
-      "outputPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/ConsaludApiRest/obj/",
+      "projectPath": "C:\\Users\\zf701439\\source\\repos\\ronaldmelara\\desafio_tecnico_2024\\ConsaludApiRest\\ConsaludApiRest.csproj",
+      "packagesPath": "C:\\Users\\zf701439\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\zf701439\\source\\repos\\ronaldmelara\\desafio_tecnico_2024\\ConsaludApiRest\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/melaragalaz/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\zf701439\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/sdk/7.0.313/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/Consalud.Commons.csproj": {
-              "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/Consalud.Commons.csproj"
+            "C:\\Users\\zf701439\\source\\repos\\ronaldmelara\\desafio_tecnico_2024\\Consalud.Commons\\Consalud.Commons.csproj": {
+              "projectPath": "C:\\Users\\zf701439\\source\\repos\\ronaldmelara\\desafio_tecnico_2024\\Consalud.Commons\\Consalud.Commons.csproj"
             },
-            "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.DataAccess/Consalud.DataAccess.csproj": {
-              "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.DataAccess/Consalud.DataAccess.csproj"
+            "C:\\Users\\zf701439\\source\\repos\\ronaldmelara\\desafio_tecnico_2024\\Consalud.DataAccess\\Consalud.DataAccess.csproj": {
+              "projectPath": "C:\\Users\\zf701439\\source\\repos\\ronaldmelara\\desafio_tecnico_2024\\Consalud.DataAccess\\Consalud.DataAccess.csproj"
             },
-            "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/Consalud.Model.csproj": {
-              "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/Consalud.Model.csproj"
+            "C:\\Users\\zf701439\\source\\repos\\ronaldmelara\\desafio_tecnico_2024\\Consalud.Model\\Consalud.Model.csproj": {
+              "projectPath": "C:\\Users\\zf701439\\source\\repos\\ronaldmelara\\desafio_tecnico_2024\\Consalud.Model\\Consalud.Model.csproj"
             }
           }
         }
@@ -2543,6 +2544,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -2601,7 +2607,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.313/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

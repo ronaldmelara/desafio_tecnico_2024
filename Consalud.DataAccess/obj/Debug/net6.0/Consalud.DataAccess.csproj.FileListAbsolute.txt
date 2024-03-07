@@ -15,3 +15,21 @@
 /Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.DataAccess/obj/Debug/net6.0/ref/Consalud.DataAccess.dll
 /Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.DataAccess/bin/Debug/net6.0/Consalud.Commons.dll
 /Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.DataAccess/bin/Debug/net6.0/Consalud.Commons.pdb
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.DataAccess\bin\Debug\net6.0\Consalud.DataAccess.deps.json
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.DataAccess\bin\Debug\net6.0\Consalud.DataAccess.dll
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.DataAccess\bin\Debug\net6.0\Consalud.DataAccess.pdb
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.DataAccess\bin\Debug\net6.0\Consalud.Commons.dll
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.DataAccess\bin\Debug\net6.0\Consalud.Model.dll
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.DataAccess\bin\Debug\net6.0\Consalud.Model.pdb
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.DataAccess\bin\Debug\net6.0\Consalud.Commons.pdb
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.DataAccess\obj\Debug\net6.0\Consalud.DataAccess.csproj.AssemblyReference.cache
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.DataAccess\obj\Debug\net6.0\Consalud.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.DataAccess\obj\Debug\net6.0\Consalud.DataAccess.AssemblyInfoInputs.cache
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.DataAccess\obj\Debug\net6.0\Consalud.DataAccess.AssemblyInfo.cs
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.DataAccess\obj\Debug\net6.0\Consalud.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.DataAccess\obj\Debug\net6.0\Consalud.DataAccess.sourcelink.json
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.DataAccess\obj\Debug\net6.0\Consalud.1D7FFE44.Up2Date
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.DataAccess\obj\Debug\net6.0\Consalud.DataAccess.dll
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.DataAccess\obj\Debug\net6.0\refint\Consalud.DataAccess.dll
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.DataAccess\obj\Debug\net6.0\Consalud.DataAccess.pdb
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.DataAccess\obj\Debug\net6.0\ref\Consalud.DataAccess.dll

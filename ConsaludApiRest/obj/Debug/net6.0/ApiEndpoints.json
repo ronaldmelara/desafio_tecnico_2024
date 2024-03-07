@@ -1,0 +1,116 @@
+[
+  {
+    "ContainingType": "ConsaludApiRest.Controllers.FacturasController",
+    "Method": "GetFacturas",
+    "RelativePath": "api/v1/facturas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConsaludApiRest.Controllers.FacturasController",
+    "Method": "GetFacturasPorRut",
+    "RelativePath": "api/v1/facturas/{rut}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "rut",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConsaludApiRest.Controllers.FacturasController",
+    "Method": "GetClientesCompras",
+    "RelativePath": "api/v1/facturas/clientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConsaludApiRest.Controllers.FacturasController",
+    "Method": "GetClienteFrecuente",
+    "RelativePath": "api/v1/facturas/clientes/frecuente",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConsaludApiRest.Controllers.FacturasController",
+    "Method": "GetFacturasGrupoComuna",
+    "RelativePath": "api/v1/facturas/comuna",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConsaludApiRest.Controllers.FacturasController",
+    "Method": "GetFacturasPorComuna",
+    "RelativePath": "api/v1/facturas/comuna/{idComuna}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idComuna",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConsaludApiRest.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Consalud.Model.Requests.AuthRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ConsaludApiRest.Controllers.LoginController",
+    "Method": "New",
+    "RelativePath": "auth/New",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Consalud.Model.Requests.AuthRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "CConsalud.Model.Responses.AuthResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  }
+]

@@ -1,0 +1,222 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "ConsaludApiRest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/v1/facturas": {
+      "get": {
+        "tags": [
+          "Facturas"
+        ],
+        "summary": "Lista de facturas",
+        "description": "Retornar lista completa de las facturas y calcular el total de cada una de ellas.",
+        "operationId": "facturas",
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v1/facturas/{rut}": {
+      "get": {
+        "tags": [
+          "Facturas"
+        ],
+        "summary": "Lista de facturas por rut",
+        "description": "Retornar las facturas de un comprador según su rut.",
+        "operationId": "facturas",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "rut",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v1/facturas/clientes/frecuente": {
+      "get": {
+        "tags": [
+          "Facturas"
+        ],
+        "summary": "Comprador con mas compras (cliente frecuente)",
+        "description": "Retornar el comprador que tenga mas compras.",
+        "operationId": "cliente-frecuente",
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v1/facturas/clientes": {
+      "get": {
+        "tags": [
+          "Facturas"
+        ],
+        "summary": "Clientes y compras realizadas",
+        "description": "Retornar lista de compradores con el monto total de compras realizadas.",
+        "operationId": "cliente-compras",
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v1/facturas/comuna/{idComuna}": {
+      "get": {
+        "tags": [
+          "Facturas"
+        ],
+        "summary": "Facturas por Comuna específica",
+        "description": "Retornar lista de facturas agrupadas por comuna especifica.",
+        "operationId": "facturas-comuna",
+        "parameters": [
+          {
+            "in": "path",
+            "name": "idComuna",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/v1/facturas/comuna": {
+      "get": {
+        "tags": [
+          "Facturas"
+        ],
+        "summary": "Facturas agrupada por Comuna",
+        "description": "Retornar lista de facturas agrupadas por comuna.",
+        "operationId": "facturas-comuna",
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/auth/New": {
+      "post": {
+        "tags": [
+          "Login"
+        ],
+        "summary": "Create new user",
+        "description": "This method allows you to register a new user",
+        "operationId": "user",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AuthRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/AuthResponse"
+            }
+          }
+        }
+      }
+    },
+    "/auth/Login": {
+      "post": {
+        "tags": [
+          "Login"
+        ],
+        "summary": "User login",
+        "description": "This method allows you to log in, validating username and password.",
+        "operationId": "login",
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AuthRequest"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "AuthRequest": {
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "AuthResponse": {
+      "type": "object",
+      "properties": {
+        "userName": {
+          "type": "string"
+        },
+        "token": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header",
+      "description": "JWT Authorization header using Bearer scheme. Enter 'Bearer' [space] and then your token in the text input below."
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

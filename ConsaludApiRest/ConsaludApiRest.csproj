@@ -7,6 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="logs\**" />
+    <Content Remove="logs\**" />
+    <EmbeddedResource Remove="logs\**" />
+    <None Remove="logs\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="6.0.27" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
     <PackageReference Include="Microsoft.OpenApi" Version="1.6.13" />
@@ -27,7 +34,6 @@
     <Folder Include="Helpers\" />
     <Folder Include="Services\" />
     <Folder Include="Jwt\" />
-    <Folder Include="logs\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Consalud.Model\Consalud.Model.csproj">
@@ -43,5 +49,15 @@
   <ItemGroup>
     <Compile Remove="Helpers\DataContext.cs" />
     <Compile Remove="Data\FacturasDA.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="JsonEjemplo.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="desafio_db.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 </Project>

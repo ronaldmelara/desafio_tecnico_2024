@@ -10,3 +10,15 @@
 /Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/obj/Debug/net6.0/refint/Consalud.Model.dll
 /Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/obj/Debug/net6.0/Consalud.Model.pdb
 /Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/obj/Debug/net6.0/ref/Consalud.Model.dll
+C:\Users\zf701439\Source\Repos\ronaldmelara\desafio_tecnico_2024\Consalud.Model\bin\Debug\net6.0\Consalud.Model.deps.json
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.Model\bin\Debug\net6.0\Consalud.Model.dll
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.Model\bin\Debug\net6.0\Consalud.Model.pdb
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.Model\obj\Debug\net6.0\Consalud.Model.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.Model\obj\Debug\net6.0\Consalud.Model.AssemblyInfoInputs.cache
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.Model\obj\Debug\net6.0\Consalud.Model.AssemblyInfo.cs
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.Model\obj\Debug\net6.0\Consalud.Model.csproj.CoreCompileInputs.cache
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.Model\obj\Debug\net6.0\Consalud.Model.sourcelink.json
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.Model\obj\Debug\net6.0\Consalud.Model.dll
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.Model\obj\Debug\net6.0\refint\Consalud.Model.dll
+C:\Users\zf701439\source\repos\ronaldmelara\desafio_tecnico_2024\Consalud.Model\obj\Debug\net6.0\Consalud.Model.pdb
+C:\Users\zf701439\Source\Repos\ronaldmelara\desafio_tecnico_2024\Consalud.Model\obj\Debug\net6.0\ref\Consalud.Model.dll
