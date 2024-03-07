@@ -572,6 +572,19 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "Consalud.Commons/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Consalud.Model": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Consalud.Commons.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Consalud.Commons.dll": {}
+        }
+      },
       "Consalud.Model/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -1273,6 +1286,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Consalud.Commons/1.0.0": {
+      "type": "project",
+      "path": "../Consalud.Commons/Consalud.Commons.csproj",
+      "msbuildProject": "../Consalud.Commons/Consalud.Commons.csproj"
+    },
     "Consalud.Model/1.0.0": {
       "type": "project",
       "path": "../Consalud.Model/Consalud.Model.csproj",
@@ -1281,6 +1299,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "Consalud.Commons >= 1.0.0",
       "Consalud.Model >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.27",
       "Microsoft.EntityFrameworkCore.Sqlite >= 6.0.27",
@@ -1312,6 +1331,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/Consalud.Commons.csproj": {
+              "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Commons/Consalud.Commons.csproj"
+            },
             "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/Consalud.Model.csproj": {
               "projectPath": "/Users/melaragalaz/Documents/Documentos/Ronald/github-ronaldmelara/NET Core/desafio_tecnico_2024/Consalud.Model/Consalud.Model.csproj"
             }

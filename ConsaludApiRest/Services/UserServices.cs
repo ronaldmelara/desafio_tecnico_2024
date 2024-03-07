@@ -1,9 +1,9 @@
 ﻿using System;
 using CConsalud.Model.Responses;
 using Consalud.Commons.contracts;
+using Consalud.Commons.Helpers;
+using Consalud.DataAccess;
 using Consalud.Model.Requests;
-using ConsaludApiRest.Data;
-using ConsaludApiRest.Helpers;
 using ConsaludApiRest.Jwt;
 
 namespace ConsaludApiRest.Services
@@ -11,19 +11,19 @@ namespace ConsaludApiRest.Services
 	public class UserServices : IUserServices
     {
 		private IJwtService jwt;
-     
-        UserDA uDa;
+
+		private IUserRepository userRepository;
         public UserServices(IJwtService jwtService, IConfiguration conf)
 		{
 			this.jwt = jwtService;
-     
-            uDa = new UserDA(conf);
+
+			userRepository = new DatabaseEngine(conf).UserRepository;
 		}
 
 		public AuthResponse CreateUser(AuthRequest request)
 		{
 	
-			var result = uDa.CreateUser(request.Username, request.Password);
+			var result = userRepository.CreateUser(request.Username, request.Password);
 
 			if (result)
 			{
@@ -37,7 +37,7 @@ namespace ConsaludApiRest.Services
         public AuthResponse LoginUser(AuthRequest request)
         {
 
-			var result = uDa.GetUserByUsername(request.Username);
+			var result = userRepository.GetUserByUsername(request.Username);
 			AuthResponse response = null;
 
 			if(result == null)

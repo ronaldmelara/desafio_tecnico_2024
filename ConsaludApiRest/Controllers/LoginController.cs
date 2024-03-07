@@ -3,7 +3,6 @@ using CConsalud.Model.Responses;
 using Consalud.Commons.contracts;
 using Consalud.Model.Requests;
 using ConsaludApiRest.Jwt;
-using ConsaludApiRest.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
@@ -11,7 +10,7 @@ using Swashbuckle.AspNetCore.Annotations;
 namespace ConsaludApiRest.Controllers
 {
     [ApiController]
-    [Route("api/v1/[controller]/[action]")]
+    [Route("auth/[action]")]
     public class LoginController : ControllerBase
     {
         private IJwtService jwtService;
@@ -24,17 +23,17 @@ namespace ConsaludApiRest.Controllers
         }
 
         [AllowAnonymous]
-        [HttpPost(Name = "user")]
+        [HttpPost(Name = "new")]
         [SwaggerOperation(OperationId = "user", Summary ="Create new user", Description = "This method allows you to register a new user")]
-        public AuthResponse Users(AuthRequest request)
+        public AuthResponse New(AuthRequest request)
         {
             return pUserServices.CreateUser(request);
         }
 
         [AllowAnonymous]
-        [HttpPost(Name = "auth")]
-        [SwaggerOperation(OperationId = "auth", Summary ="User login", Description = "This method allows you to log in, validating username and password.")]
-        public IActionResult Auth(AuthRequest request)
+        [HttpPost(Name = "login")]
+        [SwaggerOperation(OperationId = "login", Summary ="User login", Description = "This method allows you to log in, validating username and password.")]
+        public IActionResult Login(AuthRequest request)
         {
             var result = pUserServices.LoginUser(request);
             if (result == null)

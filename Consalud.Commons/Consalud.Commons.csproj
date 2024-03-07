@@ -8,9 +8,11 @@
 
   <ItemGroup>
     <None Remove="contracts\" />
+    <None Remove="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="contracts\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Consalud.Model\Consalud.Model.csproj" />

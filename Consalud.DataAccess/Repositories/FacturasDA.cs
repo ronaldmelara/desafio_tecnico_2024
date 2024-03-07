@@ -1,32 +1,46 @@
 ﻿using System;
-using Consalud.DataAccess;
+using Consalud.Commons.contracts;
 using Consalud.Model.Entities;
 using Consalud.Model.Responses;
+using Microsoft.EntityFrameworkCore;
 
-namespace ConsaludApiRest.Data
+namespace Consalud.DataAccess.Repositories
 {
-	public class FacturasDA
-	{
-        private DatabaseEngine db;
-        public FacturasDA(IConfiguration conf)
+	public class FacturasDA : IFacturasRepository
+    {
+
+        private DataContext Data { set; get; }
+
+        public FacturasDA(DataContext dataContext)
 		{
-            db = new DatabaseEngine(conf);
+            this.Data = dataContext;
         }
 
         public List<Facturas> GetFacturasPorRut(int rut)
         {
-            var lst = db.Data.Facturas.Where(f => f.RUTComprador == rut)?.ToList();
+            var lst = Data.Facturas.Where(f => f.RUTComprador == rut)?.ToList();
+            lst?.ForEach(o =>
+            {
+                o.TotalFactura = o.DetalleFactura.Sum(det => det.TotalProducto);
+            });
             return lst;
            
         }
 
         public List<FacturaTotalResponse> GetFacturas()
         {
-            var lst = db.Data.Facturas.ToList();
-            List< FacturaTotalResponse> facturasConTotal = lst.Select(factura => new FacturaTotalResponse
+            var lst = GetFacturasTodas();
+
+            lst.ForEach(o => {
+                o.TotalFactura = o.DetalleFactura.Sum(det => det.TotalProducto);
+            });
+
+
+            List<FacturaTotalResponse> facturasConTotal = lst.Select(factura =>
+            new FacturaTotalResponse
             {
                 Factura = factura,
-                TotalFactura = factura.DetalleFactura.Sum(det => det.TotalProducto)
+                TotalFactura = factura.TotalFactura
             }).ToList();
 
             return facturasConTotal;
@@ -34,11 +48,11 @@ namespace ConsaludApiRest.Data
         }
 
 
-        public CompradorCompraResponse GetCompradorConMasCompras()
+        public ClienteFrecuenteResponse GetCompradorConMasCompras()
         {
-            var lst = db.Data.Facturas.ToList();
-            CompradorCompraResponse facturasConTotal = lst.GroupBy(f => new { f.RUTComprador, f.DvComprador })
-                .Select(g => new CompradorCompraResponse
+            var lst = GetFacturasTodas();
+            ClienteFrecuenteResponse facturasConTotal = lst.GroupBy(f => new { f.RUTComprador, f.DvComprador })
+                .Select(g => new ClienteFrecuenteResponse
                 {
                     RutComprador = g.Key.RUTComprador,
                     DvComprador = g.Key.DvComprador,
@@ -51,11 +65,11 @@ namespace ConsaludApiRest.Data
 
         }
 
-        public List<CompradorCompraResponse> GetTotalCompraPorComprador()
+        public List<ClienteFrecuenteResponse> GetTotalCompraPorComprador()
         {
-            var lst = db.Data.Facturas.ToList();
-            List<CompradorCompraResponse> facturasComprador = lst.GroupBy(f => new { f.RUTComprador, f.DvComprador })
-                .Select(g => new CompradorCompraResponse
+            var lst = GetFacturasTodas();
+            List<ClienteFrecuenteResponse> facturasComprador = lst.GroupBy(f => new { f.RUTComprador, f.DvComprador })
+                .Select(g => new ClienteFrecuenteResponse
                 {
                     RutComprador = g.Key.RUTComprador,
                     DvComprador = g.Key.DvComprador,
@@ -71,7 +85,7 @@ namespace ConsaludApiRest.Data
 
         public List<ComunaFacturasResponse> GetFacturasAgrupadasPorComuna()
         {
-            var lst = db.Data.Facturas.ToList();
+            var lst = GetFacturasTodas();
             List<ComunaFacturasResponse> facturasComuna = lst.GroupBy(f => f.ComunaComprador)
                 .Select(g => new ComunaFacturasResponse
                 {
@@ -92,6 +106,11 @@ namespace ConsaludApiRest.Data
 
 
 
+        }
+
+        private List<Facturas> GetFacturasTodas()
+        {
+            return Data.Facturas.Include(factura => factura.DetalleFactura).ThenInclude(detalle => detalle.Producto).ToList(); 
         }
 
     }

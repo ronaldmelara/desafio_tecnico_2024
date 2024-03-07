@@ -13,5 +13,12 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Consalud.Model\Consalud.Model.csproj" />
+    <ProjectReference Include="..\Consalud.Commons\Consalud.Commons.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Repositories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Repositories\" />
   </ItemGroup>
 </Project>

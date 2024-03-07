@@ -18,16 +18,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Remove="Data\" />
     <None Remove="Helpers\" />
     <None Remove="Services\" />
     <None Remove="Jwt\" />
+    <None Remove="logs\" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\" />
     <Folder Include="Helpers\" />
     <Folder Include="Services\" />
     <Folder Include="Jwt\" />
+    <Folder Include="logs\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Consalud.Model\Consalud.Model.csproj">
@@ -42,5 +42,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Remove="Helpers\DataContext.cs" />
+    <Compile Remove="Data\FacturasDA.cs" />
   </ItemGroup>
 </Project>

@@ -546,6 +546,7 @@
       },
       "Consalud.DataAccess/1.0.0": {
         "dependencies": {
+          "Consalud.Commons": "1.0.0",
           "Consalud.Model": "1.0.0",
           "Microsoft.EntityFrameworkCore": "6.0.27",
           "Microsoft.EntityFrameworkCore.Sqlite": "6.0.27",
