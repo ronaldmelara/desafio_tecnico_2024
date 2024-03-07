@@ -70,6 +70,8 @@ En cuanto a ***codificación***: se construye una aplicación con arquitectura t
 
 Screenshot Adicionales:
 
+URL Swagger Local: https://localhost:7248/swagger/index.html
+
 ![enter image description here](https://github.com/ronaldmelara/desafio_tecnico_2024/blob/main/Swagger.png)
 
 ![enter image description here](https://github.com/ronaldmelara/desafio_tecnico_2024/blob/main/proyecto_vs2022.png)
