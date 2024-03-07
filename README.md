@@ -68,9 +68,14 @@ De manera, que para conseguir lo anterior mi API expone los siguientes métodos:
 
 En cuanto a ***codificación***: se construye una aplicación con arquitectura típica en **N Capas**.   Donde es posible distinguir los controladores, los servicios y librerías donde se agrupan el Modelo (Entidades, dto, Request, response),  DataAccess donde se exponen las interfaces de contrato que exponen los repositorios y sus métodos para acceder a datos mediante **EntityFramework**.
 
+
+Api publicada en: https://consaludapirest20240307102827.azurewebsites.net/swagger/index.html
+Github: https://github.com/ronaldmelara/desafio_tecnico_2024
+
 Screenshot Adicionales:
 
-URL Swagger Local: https://localhost:7248/swagger/index.html
+URL Swagger: https://consaludapirest20240307102827.azurewebsites.net/swagger/index.html
+
 
 ![enter image description here](https://github.com/ronaldmelara/desafio_tecnico_2024/blob/main/Swagger.png)
 
