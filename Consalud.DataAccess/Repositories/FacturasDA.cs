@@ -19,6 +19,7 @@ namespace Consalud.DataAccess.Repositories
         public List<Facturas> GetFacturasPorRut(int rut)
         {
             var lst = GetFacturasTodas().Where(f => f.RUTComprador == rut)?.ToList();
+
             lst?.ForEach(o =>
             {
                 o.TotalFactura = o.DetalleFactura.Sum(det => det.TotalProducto);
